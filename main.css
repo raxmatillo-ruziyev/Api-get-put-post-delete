@@ -44,6 +44,7 @@
     background: blue;
     border: 1px solid blue;
     border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #sendPut{
     position: absolute;
