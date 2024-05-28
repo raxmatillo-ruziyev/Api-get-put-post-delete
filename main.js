@@ -51,9 +51,9 @@ fetch('https://autoapi.dezinfeksiyatashkent.uz/api/models')
            
             
              
-            
+             listItem.appendChild(nameTitle);
             listItem.appendChild(brandTitle);
-            listItem.appendChild(nameTitle);
+           
             listItem.appendChild(editButton);
             boxList.appendChild(listItem);
         });
@@ -195,9 +195,9 @@ const send = document.querySelector("#send")
                     e.preventDefault();
                     deleteModel(elment.id);
                 });
-                
+                 listItem.appendChild(nameTitle);
                 listItem.appendChild(brandTitle);
-                listItem.appendChild(nameTitle);
+               
                 listItem.appendChild(editButton);
                 listItem.appendChild(deleteButton);
                 boxList.appendChild(listItem);
