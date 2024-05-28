@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input id="phone" type="number" placeholder="raqamni kiriting" required><br>
+        <input id="parol" type="password" placeholder="parolni kiriting" required><br>
+        <button id="btn">Kirish</button>
+    </form>
+    <style>
+        #form{
+            width: 600px;
+            height: 400px;
+            background: blue;
+            margin: 100px auto;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+        #phone{
+            margin-top: 150px;
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: blue;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        #parol{
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: blue;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        #btn{
+            padding: 8px 92px;
+            border: 1px solid rgb(181, 185, 181);
+            border-radius: 5px;
+            background: red;
+            font-size: 20px;
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+    <script>
+        const form = document.querySelector("#form")
+        const parol = document.querySelector("#parol")
+        const btn = document.querySelector("#btn")
+        const phone = document.querySelector("#phone")
+
+        btn.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            fetch("https://autoapi.dezinfeksiyatashkent.uz/api/auth/signin", {
+
+                method: "POST",
+
+                body: JSON.stringify({
+                password:parol.value,
+                phone_number:phone.value
+                }),
+
+
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            })
+
+                .then(response => response.json())
+                .then(data =>{
+                    localStorage.setItem("access_token",data.data.tokens.accessToken.token) ;
+                    window.location.href ="index.html"
+                });
+              
+        })
+    </script>
+</body>
+
+</html>

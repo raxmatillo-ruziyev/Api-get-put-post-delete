@@ -1,0 +1,123 @@
+.boxItem{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.boxcha{
+    display: flex;
+    justify-content: space-between;
+}
+.boxList{
+    text-align: left;
+    padding-top: 20px;
+
+
+}
+.modal,.edit{
+    font-size: 35px;
+    position: absolute;
+    padding: 30px;
+    height: 400px;
+    top: 100px;
+    width: 600px;
+    border-radius: 8px;
+    text-align: left;
+    left: 320px;
+    background: white;
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    padding: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    background: rgb(201, 201, 208);
+    align-items: center;
+  
+}
+#open{
+    position: absolute;
+    right: 60px;
+    font-size: 25px;
+    padding: 6px 20px;
+    color: white;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+#sendPut{
+    position: absolute;
+    top: 315px;
+    left: 30px;
+    font-size: 25px;
+    padding: 6px 20px;
+    color: white;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+.title{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+   
+}
+input{
+    padding: 10px 70px;
+    margin: 20px 0;
+}
+#select,#PutSelect{
+    padding:8px 60px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+#send{
+    margin: 60px 0;
+    padding: 8px 20px;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+.btn{
+    padding: 0px 20px;
+    margin-top:20px ;
+    
+    height: 40px;
+}
+#putForm{
+    display: none;
+}
+
+.title{
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 5px;
+}
+.boxItem{
+    padding: 0;
+}
+.btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: red;
+}
+.btn1{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background:blue;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+}

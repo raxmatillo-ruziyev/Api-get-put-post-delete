@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+ <div class="container">
+
+
+
+
+
+
+  <button id="open">Add</button>
+  <div class="modal">
+  <div class="boxcha">
+    Add
+    <i id="close" class="fa fa-close"></i>
+  </div>
+<form id="sendForm">
+  *Name <br>
+  <input id="inputsend" type="text"><br>
+  *Brand <br>
+  <select id="select"></select><br>
+  <button type="submit" id="send">Save</button>
+</form>
+  </div>
+
+
+
+
+<ul class="boxList" id="boxList">
+</ul>
+
+</div>
+
+
+
+
+
+<!-- <button id="openPut">Edit</button> -->
+
+<div class="edit">
+ 
+  
+  <div class="boxcha">
+    Edit
+    <i id="closePut" class="fa fa-close"></i>
+  </div>
+<form id="PutForm">
+  *Name <br>
+  <input id="putSend" type="text"><br>
+  *Brand <br>
+  <select id="PutSelect"></select><br>
+  <button type="submit" id="sendPut">Edit</button>
+</form>
+
+
+</div>
+
+
+
+ 
+     <script src="./main.js">
+      if (localStorage.getItem("access_token")) {
+        
+      } else {
+        window.location.href ="index.html"
+      }
+     </script>
+  </body>
+    
+   
+
+</html>
